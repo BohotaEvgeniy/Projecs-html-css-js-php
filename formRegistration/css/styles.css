@@ -1,0 +1,146 @@
+.ancestor {
+  position: relative;
+  width: 100%; }
+
+.space {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000; }
+
+.my-progress {
+  padding: 0 10px;
+  margin-bottom: 40px; }
+
+.circle {
+  position: absolute;
+  margin: -68px 0 0 -1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef; }
+
+.circle-two {
+  right: 50%;
+  margin-right: -20px; }
+
+.circle-three {
+  right: 0; }
+
+.step {
+  position: absolute;
+  margin-top: -28px; }
+
+.step-two {
+  right: 50%;
+  margin-right: -24px; }
+
+.step-three {
+  right: 0; }
+
+.my-cards {
+  margin-top: 100px;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.my-card {
+  cursor: pointer; }
+  .my-card:hover {
+    background-color: #f4f5f7; }
+
+.btn-person {
+  width: 170px;
+  cursor: pointer; }
+
+.occupation-user {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.form-wrapper {
+  padding: 40px; }
+
+.form {
+  width: 100%;
+  background: ghostwhite;
+  padding: 10px 0 10px; }
+  .form .subcheck {
+    text-align: center;
+    margin-left: 7px; }
+
+.choice-user {
+  height: 20px;
+  width: 20px; }
+
+.checkbox-choice-user-label {
+  width: 15%;
+  margin-left: 9%;
+  border: 1px solid #333; }
+
+.section-1 {
+  padding: 0 30px;
+  display: flex;
+  margin-bottom: 50px; }
+
+.section-1 {
+  justify-content: space-between; }
+  .section-1 .block-inn input {
+    margin-left: 161px; }
+
+.section-businessman .block-filial input {
+  margin-left: 48px; }
+
+.pay {
+  text-align: center; }
+  .pay .form-check input {
+    margin-left: initial;
+    margin-top: 8px; }
+  .pay .payman {
+    margin-right: 50px; }
+
+.block-email, .block-password {
+  width: 50%; }
+
+.block-email .email {
+  margin-right: 108px; }
+
+.block-password {
+  padding-left: 100px; }
+
+.section-1 {
+  padding: 0 30px; }
+  .section-1 .block-IFO .one-input {
+    margin-left: 172px; }
+  .section-1 .block-IFO .two-input {
+    margin-left: 7px; }
+
+.section-3 {
+  padding: 0 30px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between; }
+  .section-3 input {
+    margin-top: 6px; }
+
+.section-4 {
+  padding: 0 30px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between; }
+  .section-4 .block-place .region, .section-4 .block-place .item {
+    width: 207px;
+    float: right;
+    margin-left: 102px; }
+  .section-4 .block-address .street, .section-4 .block-address .house, .section-4 .block-address .appartment {
+    margin-left: 138px; }
+
+.notice {
+  padding: 0 30px; }
+  .notice .paragraph {
+    display: inline-block; }
+  .notice .btn-send {
+    float: right; }
+
+input {
+  float: right; }
+
+/*# sourceMappingURL=styles.css.map */

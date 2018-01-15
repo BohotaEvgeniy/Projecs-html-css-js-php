@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="libs/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark justify-content-end">
+    <form class="form-inline">
+      <button class="btn btn-outline-info mr-3" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" type="button">Registration</button>
+      <button class="btn btn-outline-info" type="button">Autorization</button>
+    </form>
+  </nav>
+  <main>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="collapse ancestor" id="collapseExample">
+            <h1 class="text-center space">Registration</h1>
+            <div class="progress my-progress">
+              <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+            <div class="circle circle-three"></div>
+            <span class="step step-one">step 1</span>
+            <span class="step step-two">step 2</span>
+            <span class="step step-three">step 3</span>
+
+            <div style="flex-direction: row;" class="card card-body my-cards">
+              <div class="card border-success text-center mb-3 my-card" id="agriculturalProducer" style="max-width: 20rem;">
+                <div class="card-body text-success">
+                  <h4 class="card-title">Сельхозпроизводитель</h4>
+                  <p class="card-text">Я хочу покупать и продавать товары</p>
+                </div>
+              </div>
+              <div class="card border-success text-center mb-3 my-card" id="distributor" style="max-width: 20rem;">
+                <div class="card-body text-success">
+                  <h4 class="card-title">Дистрибьютор</h4>
+                  <p class="card-text">Я хочу продавать товары</p>
+                </div>
+              </div> 
+              <div class="card border-success text-center mb-3 my-card" id="buyer" style="max-width: 20rem;">
+                <div class="card-body text-success">
+                  <h4 class="card-title">Покупатель зерна</h4>
+                  <p class="card-text">Я хочу покупать урожай(зерно)</p>
+                </div>
+              </div>
+            </div>
+            <ul style="display: flex;display: none;justify-content: space-around;margin-top: 100px" class="nav nav-pills mb-3 choice-groupe" id="pills-tab" role="tablist">
+              <li class="nav-item privatePerson">
+                <a id="privatePerson" class="nav-link btn btn-secondary btn-person" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">Частное лицо</a>
+              </li>
+              <li class="nav-item businessman">
+                <a id="businessman" class="nav-link btn btn-secondary btn-person btn-person-groupe" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Предприниматель</a>
+              </li>
+              <li class="nav-item organization">
+                <a id="organization" class="nav-link btn btn-secondary btn-person btn-person-groupe" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Организация</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row form-wrapper form-persona">
+                  <form class="form" action="#" method="post">
+                    <div class="form-check">
+                      <input style="margin-left: 15%;width: 20px;height: 20px" class="choice-user form-check-input" type="checkbox" name="checkbox-choice-1" id="checkbox-choice-1" tabindex="1" checked value="" /></br>
+                      <label style="margin-left: 8%;" class="checkbox-choice-user-label form-check-label" for="checkbox-choice-1"></label> 
+                    </div>
+                    <h4 class="text-center mb-3">Данные для входа в систему</h4>
+                    <section class="section-1">
+                      <div class="block-email">
+                        <label for="email">Email*</label>
+                        <input class="email" type="email" name="email" id="email" minlength="5" maxlength="25"  required value="" tabindex="1" />
+                      </div>
+                      <div class="block-password">
+                        <label class="one-input" for="password">Пароль*</label>
+                        <input type="text" name="password" id="password" required  minlength="4" maxlength="25"  value="" tabindex="2" /></br>
+                        <label class="two-input" for="password">Пароль еще раз*</label>
+                        <input type="text" name="controlPassword" id="controlPassword" minlength="4" maxlength="25" required value="" tabindex="3" />
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Контактные данные</h6>
+                    <section class="section-1">
+                      <div class="block-IFO">
+                        <label for="name">Ф.И.О *</label>
+                        <input class="one-input" type="text" name="name" id="name" minlength="5" maxlength="30"  required value="" tabindex="4" /></br>
+                        <label for="phone">Контактный телефон* +380 ( )</label>
+                        <input class="two-input" type="text" name="phone" id="phone" minlength="7" maxlength="7" required value="" tabindex="5" />
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Направление</h6>
+                    <section class="section-3">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox1" value="option1"> Выбрать все
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox2" value="option2"> Зерновые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox3" value="option3"> Масличные
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox4" value="option4"> Бобовые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox5" value="option5"> Продукты переработки
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox6" value="option6"> Бахчевые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox7" value="option7"> Нишевые культуры
+                        </label>
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Адрес</h6>
+                    <section class="section-4">
+                      <div class="block-place">
+                        <label for="region">Область*</label>
+                        <select class="js-example-basic-example region" name="state">  
+                        </select></br> 
+                        <label for="item">Населенный пунк</label>
+                        <input class="item" type="text" name="item" id="item" value="" tabindex="7" />
+                      </div>
+                      <div class="block-address">
+                        <label for="street">Улица</label>
+                        <input class="street" type="text" name="street" id="street" value="" tabindex="8" /></br>
+                        <label for="house">Дом</label>
+                        <input class="house" type="text" name="house" id="house" value="" tabindex="9" /></br>
+                        <label for="appartment">Квартира</label>
+                        <input class="appartment" type="text" name="appartment" id="appartment" value="" tabindex="10" />
+                      </div>
+                    </section>
+                    <div class="notice">
+                      <p class="paragraph">Поля,отмеченные символом *,яыляются обязательными для заполнения</p>
+                      <input class="btn btn-send btn-secondary" type="submit" value="Далее" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row form-wrapper form-businessman">
+                  <form class="form" action="#" method="post">
+                    <div style="text-align: center;" class="form-check form-check-businessmsn">
+                      <input style="margin-left: -6px" class="choice-user form-check-input" type="checkbox" name="checkbox-choice-2" id="checkbox-choice-2" tabindex="1" checked value="" /></br>
+                      <label style="margin-left: 10px" class="checkbox-choice-user-label form-check-label" for="checkbox-choice-2"></label> 
+                    </div>
+                    <h4 class="text-center mb-3">Данные для входа в систему</h4>
+                    <section class="section-1">
+                      <div class="block-inn">
+                        <label for="INN">ИНН*</label>
+                        <input class="info-user" type="text" name="INN" id="info-user" minlength="12" maxlength="25" required value="" tabindex="1" />
+                      </div>
+                      <div class="block-password">
+                        <label class="one-input" for="password">Пароль*</label>
+                        <input type="text" name="password" id="password" minlength="4" maxlength="25" required value="" tabindex="2" /></br>
+                        <label class="two-input" for="password">Пароль еще раз*</label>
+                        <input type="text" name="controlPassword" id="controlPassword" minlength="4" maxlength="25" required value="" tabindex="3" />
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Контактные данные</h6>
+                    <section class="section-1 section-businessman">
+                      <div class="block-IFO block-filial">
+                        <label for="filial">Наименование Ф.Л.П.*</label>
+                        <input class="" type="text" name="filial" id="filial" minlength="4" maxlength="25"  required value="" tabindex="4" /></br>
+                        <label for="name">Ф.И.О контактного лица*</label>
+                        <input class="" type="text" name="name" id="name" minlength="5" maxlength="30"  required value="" tabindex="45" />
+                      </div>
+                      <div class="block-number">
+                        <label for="phone">Контактный телефон* +380 ( )</label>
+                        <input class="two-input" type="text" name="phone" id="phone" minlength="7" maxlength="7" required value="" tabindex="6" /></br>
+                        <label for="email">Email*</label>
+                        <input class="one-input" type="email" name="email" id="email" minlength="4" maxlength="25"  required value="" tabindex="7" />
+                      </div>
+                    </section>
+                    <section class="pay">
+                      <div class="form-check">
+                        <label class="payman">Плательщик ПДВ</label>
+                        <input type="checkbox" class="form-check-input" checked id="payCheck1">
+                        <label class="form-check-label" for="payCheck1">Да</label>
+                        <input type="checkbox" class="form-check-input" id="payCheck2">
+                        <label class="form-check-label" for="payCheck2">Нет</label>
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Направление</h6>
+                    <section class="section-3">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox1" value="option1"> Выбрать все
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox2" value="option2"> Зерновые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox3" value="option3"> Масличные
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox4" value="option4"> Бобовые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox5" value="option5"> Продукты переработки
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox6" value="option6"> Бахчевые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox7" value="option7"> Нишевые культуры
+                        </label>
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Адрес</h6>
+                    <section class="section-4">
+                      <div class="block-place">
+                        <label for="region">Область*</label>
+                        <select class="js-example-basic-example2 region" name="state">  
+                        </select></br> 
+                        <label for="item">Населенный пунк</label>
+                        <input class="item" type="text" name="item" id="item" value="" tabindex="7" />
+                      </div>
+                      <div class="block-address">
+                        <label for="street">Улица</label>
+                        <input class="street" type="text" name="street" id="street" value="" tabindex="8" /></br>
+                        <label for="house">Дом</label>
+                        <input class="house" type="text" name="house" id="house" value="" tabindex="9" /></br>
+                        <label for="appartment">Квартира</label>
+                        <input class="appartment" type="text" name="appartment" id="appartment" value="" tabindex="10" />
+                      </div>
+                    </section>
+                    <div class="notice">
+                      <p class="paragraph">Поля,отмеченные символом *,яыляются обязательными для заполнения</p>
+                      <input class="btn btn-send btn-secondary" type="submit" value="Далее" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row form-wrapper form-organization">
+                  <form class="form" action="#" method="post">
+                    <div style="text-align: right;" class="form-check form-check-distributor">
+                      <input style="margin-left: -169px" class="choice-user form-check-input" type="checkbox" name="checkbox-choice-1" id="checkbox-choice-1" tabindex="1" checked value="" /></br>
+                      <label style="margin-right: 80px" class="checkbox-choice-user-label form-check-label" for="checkbox-choice-1"></label> 
+                    </div>
+                    <h4 class="text-center mb-3">Данные для входа в систему</h4>
+                    <section class="section-1">
+                      <div class="block-inn">
+                        <label for="edr">ЕДРПОУ*</label>
+                        <input class="info-edr" type="text" name="edr" id="info-edr" minlength="1" maxlength="50"   required tabindex="1" />
+                      </div>
+                      <div class="block-password">
+                        <label class="one-input" for="password">Пароль*</label>
+                        <input type="text" name="password" id="password" minlength="4" maxlength="25" size="25"  required tabindex="2" /></br>
+                        <label class="two-input" for="password">Пароль еще раз*</label>
+                        <input type="text" name="controlPassword" id="controlPassword" minlength="4" maxlength="25"  required value="" tabindex="3" />
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Контактные данные</h6>
+                    <section class="section-1 section-businessman">
+                      <div class="block-IFO block-filial">
+                        <label for="filial">Организация*</label>
+                        <input class="" type="text" name="filial" id="filial" required value="" tabindex="4" /></br>
+                        <label for="name">Ф.И.О директора*</label>
+                        <input class="" type="text" name="namePrincipal" id="name" minlength="4" maxlength="25"   required value="" tabindex="45" /></br>
+                        <label for="name">Ф.И.О контактного лица*</label>
+                        <input class="" type="text" name="name" id="name" minlength="4" maxlength="25" size="25" required value="" tabindex="45" />
+                      </div>
+                      <div class="block-number">
+                        <label for="phone">Контактный телефон* +380 ( )</label>
+                        <input class="two-input" type="text" name="phone" id="phone" minlength="7" maxlength="7"  required value="" tabindex="6" /></br>
+                        <label for="email">Email*</label>
+                        <input class="one-input" type="email" name="email" id="email" minlength="5" maxlength="25"  required value="" tabindex="7" />
+                      </div>
+                    </section>
+                    <section class="pay">
+                      <div class="form-check">
+                        <label class="payman">Плательщик ПДВ</label>
+                        <input type="checkbox" class="form-check-input" checked id="payCheck1">
+                        <label class="form-check-label" for="payCheck1">Да</label>
+                        <input type="checkbox" class="form-check-input" id="payCheck2">
+                        <label class="form-check-label" for="payCheck2">Нет</label>
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Направление</h6>
+                    <section class="section-3">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox1" value="option1"> Выбрать все
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox2" value="option2"> Зерновые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox3" value="option3"> Масличные
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox4" value="option4"> Бобовые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox5" value="option5"> Продукты переработки
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox6" value="option6"> Бахчевые
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input choice-all" type="checkbox" id="inlineCheckbox7" value="option7"> Нишевые культуры
+                        </label>
+                      </div>
+                    </section>
+                    <h6 class="text-center mb-3">Адрес</h6>
+                    <section class="section-4">
+                      <div class="block-place">
+                        <label for="region">Область*</label>
+                        <select class="js-example-basic-example3 region" name="state">  
+                        </select></br> 
+                        <label for="item">Населенный пунк</label>
+                        <input class="item" type="text" name="item" id="item" value="" tabindex="7" />
+                      </div>
+                      <div class="block-address">
+                        <label for="street">Улица</label>
+                        <input class="street" type="text" name="street" id="street" value="" tabindex="8" /></br>
+                        <label for="house">Дом</label>
+                        <input class="house" type="text" name="house" id="house" value="" tabindex="9" /></br>
+                        <label for="appartment">Квартира</label>
+                        <input class="appartment" type="text" name="appartment" id="appartment" value="" tabindex="10" />
+                      </div>
+                    </section>
+                    <div class="notice">
+                      <p class="paragraph">Поля,отмеченные символом *,яыляются обязательными для заполнения</p>
+                      <input class="btn btn-send btn-secondary" type="submit" value="Далее" />
+                    </div>
+                  </form>
+                </div>
+              </div>      
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="libs/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('#myTab a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $(".my-card").click(function(){
+        var categoryUser = $(this).attr("id");
+
+        if (categoryUser == "buyer") {
+          $(".card-body").hide();
+          $(".choice-groupe").show();
+          $(".circle-one").css({'background-color':'#28a745'});  
+        } else {
+          $(".privatePerson").hide();
+          $(".card-body").hide();
+          $(".choice-groupe").show();
+          $(".circle-one").css({'background-color':'#28a745'});
+          $('.form-check-businessmsn').css({'text-align':'left'});
+          $('.form-check-businessmsn input').css({'margin-left':'251px'});
+          $('.form-check-businessmsn label').css({'margin-left':'180px'});
+          $('.form-check-distributor input').css({'margin-left':'-264px'});
+          $('.form-check-distributor label').css({'margin-right':'174px'});
+
+          
+        }
+      });
+
+
+      $(".btn-person").click(function(){
+        var subCategoryUser = $(this).attr("id");
+
+        switch(subCategoryUser) {
+          case 'privatePerson':
+          $('.progress-bar').css({'width':'50%'});
+          ;
+              /*$(".form-organization").hide();
+              $(".form-businessman").hide();*/
+              case 'businessman':
+              $('.progress-bar').css({'width':'50%'});
+              
+
+              /*$(".form-persona").hide();
+              $(".form-organization").hide();*/
+              case 'organization':
+              $('.progress-bar').css({'width':'50%'});
+              /*$('.progress-bar').css({'width':'50%'});
+              $(".form-organization").toggle();*/
+             /* $(".form-businessman").hide();
+             $(".form-persona").hide();*/
+             default:
+             break;
+           }
+
+          /*if (subCategoryUser == "") {
+              $(".my-card").hide();
+              $(".btn-person").show();
+              $(".progress-bar").css({'width':'50%'});
+              $(".circle-one").css({'background-color':'#28a745'});  
+            } else {
+              $(".my-card").hide();
+              $(".btn-person-groupe").show();
+            }*/
+
+
+          });
+
+      $("#inlineCheckbox1").click(function(){
+        var value = $("input.choice-all").prop('checked');
+        if (value) {
+          $("input.choice-all").attr('checked',true);
+        } else {
+          $("input.choice-all").attr('checked',false);  
+        }
+      });
+
+    });
+  </script>
+  <script type="text/javascript">
+    $(function () {
+      var params = {
+        "modelName": "Address",
+        "calledMethod": "getCities",
+        "methodProperties": {
+          "Page": "1"
+        },
+        "apiKey": "b0cf040265790a09e7342dcf79a4b441"
+      };
+      $.ajax({
+        url: 'https://api.novaposhta.ua/v2.0/json/?' + $.param(params),
+        beforeSend: function (xhrObj) {
+          xhrObj.setRequestHeader('Content-Type', 'application/json');
+          return Number;
+        },
+        type: 'POST',
+        dataType: 'jsonp',
+        data: '{body}'
+      }).done(function (data) {
+        var arr = Array();
+        var g = jQuery.makeArray(data);
+        for (var i = 0; i < g[0].data.length; i++) {
+          arr.push(g[0].data[i].DescriptionRu);//$(".js-example-basic-single").append('<option><option>');
+          $(".js-example-basic-example").append('<option><option>');
+          $('option').last().attr('id','city-'+i);
+          $('option').last().attr('value',i);
+          $('option').last().text(g[0].data[i].DescriptionRu); 
+        }
+        $("option").detach(":empty")
+        
+        for (var i = 0; i < arr.length; i++) {
+          $(".js-example-basic-example2").append('<option><option>');
+          $('option').last().attr('id','city-'+i);
+          $('option').last().attr('value',i);
+          $('option').last().text(arr[i]);
+        }
+        $("option").detach(":empty")
+
+        for (var i = 0; i < arr.length; i++) {
+          $(".js-example-basic-example3").append('<option><option>');
+          $('option').last().attr('id','city-'+i);
+          $('option').last().attr('value',i);
+          $('option').last().text(arr[i]);
+        }
+        $("option").detach(":empty")
+        console.log(arr);
+          //console.log(length(data));
+        }).fail(function () {
+          alert('error');
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".btn-send").click(function(){
+          var infoForm = {
+            'email' : $('#email').val(),
+            'password' : $('#password').val(),
+            'controlPassword' : $('#controlPassword').val(),
+            'fio' : $('#name').val(),
+            'fio' : $('#phone').val(),
+          };
+          var email = $('#email').val();
+          var password = $('#password').val();
+          var controlPassword = $('#controlPassword').val();
+          alert(email);
+          alert(password);
+        });
+      });
+    </script>
+  </body>
+  </html>

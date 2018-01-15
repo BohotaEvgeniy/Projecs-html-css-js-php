@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./jquery.progressbar.js"></script>
+  <link rel="stylesheet" media="all" href="./jquery.progressbar.css" />
+  <title>jQuery Step Progress Bar Demo</title>
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  html { min-height:100vh;}
+    body {
+
+      font-family: 'Roboto';
+      background: linear-gradient(to left, #8E44AD , #AD93E6);
+    }
+    .container {
+      margin:150px auto;
+      max-width:420px;
+      font-size: 18px;
+    }
+    h1 { color:#fff; margin-bottom:100px; font-size:1.5em; text-align:center;}
+  </style>
+  
+</head>
+<body>
+
+  <div class="container">
+  
+    <div id="steps"></div>
+  </div>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('#steps').progressbar({
+        steps: ['Step 1', '~Step 2 Failed', '@Step 3 ( Current )', 'Step 4',]
+      });
+    });
+  </script>
+</body>
+</html>
